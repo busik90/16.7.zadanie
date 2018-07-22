@@ -1,0 +1,10 @@
+.TodoList {
+  padding: 10px 15px;
+  font-size: 24px;
+  list-style: inside;
+  border: 2px solid;
+}
+
+.TodoItem::first-letter {
+  text-transform: uppercase;
+}
