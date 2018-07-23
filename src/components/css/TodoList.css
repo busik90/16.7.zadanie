@@ -4,7 +4,3 @@
   list-style: inside;
   border: 2px solid;
 }
-
-.TodoItem::first-letter {
-  text-transform: uppercase;
-}
