@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './css/TodoForm.css'
 
 class TodoForm extends React.Component {
   constructor(props) {
@@ -22,7 +23,7 @@ class TodoForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.onSubmit}>
+      <form className={style.TodoForm} onSubmit={this.onSubmit}>
         <input
           type='text'
           onChange={this.onChangeHandle}

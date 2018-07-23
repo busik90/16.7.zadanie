@@ -1,0 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-width: 300px;
+  height: 100vh;
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+  background-color: #F5F5F5;
+  color: #222;
+  display: flex;
+  justify-content: center;
+}
