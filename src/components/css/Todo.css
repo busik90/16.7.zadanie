@@ -1,7 +1,18 @@
 .TodoItem {
-  margin: 4px 0;
-  padding: 3px 6px;
+  height: 0;
+  margin: 0;
+  padding: 0 6px;
+  opacity: 0;
+
   list-style-type: circle;
+  overflow: hidden;
+
+  transition: list-style-type .3s,
+              background-color .3s,
+              height .3s ease-out,
+              margin .3s ease-out,
+              padding .3s ease-out,
+              opacity .3s  ease-out .25s;
 }
 
 .TodoItem::first-letter {
@@ -9,6 +20,17 @@
 }
 
 .TodoItem:hover {
+  list-style-type: disc;
   background-color: #2ea849;
   cursor: pointer;
+}
+
+.visable {
+  margin: 4px 0;
+  padding: 3px 6px;
+  opacity: 1;
+}
+
+.TodoItemHidden:hover {
+  background-color: #F5F5F5;
 }

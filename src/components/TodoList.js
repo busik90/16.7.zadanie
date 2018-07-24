@@ -8,6 +8,7 @@ const TodoList = props => {
       key={item.id}
       todoItem={item}
       removeTodoItem={props.removeTodoItem}
+      animateTodoList={props.animateTodoList}
     />
   )
 

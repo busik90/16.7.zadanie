@@ -4,4 +4,5 @@
   font-size: 24px;
   list-style: inside;
   border: 2px solid;
+  overflow: auto;
 }
