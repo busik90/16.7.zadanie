@@ -6,9 +6,16 @@ class Todo extends React.Component {
     super(props);
   }
 
+  componentDidMount = () => {
+    setTimeout(() => this.props.animateTodoList('add', this.props.todoItem.id), 200);
+  }
+
   render() {
     return (
-      <li className={style.TodoItem} onClick={() => this.props.removeTodoItem(this.props.todoItem.id)}>
+      <li id={this.props.todoItem.id}
+          className={style.TodoItem}
+          onClick={() => this.props.removeTodoItem(this.props.todoItem.id)}
+      >
         {this.props.todoItem.text}
       </li>
     )
